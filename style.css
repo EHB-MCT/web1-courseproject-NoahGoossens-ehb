@@ -4,4 +4,21 @@ body {
     padding: 0;
     box-sizing: border-box;
     line-height: 1.4;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #007BFF;
+    color:white;
+    box-shadow: 0 2px 10 px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 35px;
+    font-weight: bold;
 }
