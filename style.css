@@ -279,3 +279,52 @@ footer a:hover {
     text-align: center;
   }
 }
+
+/* VAARDIGHEDEN*/
+
+.vaardigheden-item {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Licht schaduweffect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9; /* Zachte achtergrondkleur */
+  padding: 20px;
+}
+.vaardigheden-details {
+  display: grid;
+  gap: 30px;
+  padding: 50px 10%;
+  grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+}
+
+/* titels */
+.vaardigheden-item h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.vaardigheden-item p {
+  line-height: 1.5;
+  font-size: 15px;
+  color: #666;
+}
+
+.vaardigheden-item:hover {
+  transform: translateY(-5px); /* 2d effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* dropshadow */
+}
+
+/*  mobiel */
+@media (max-width: 768px) {
+  /*  kleinere font */
+  .vaardigheden-item h3 {
+    font-size: 18px;
+  }
+
+  .vaardigheden-item p {
+    font-size: 13px;
+  }
+  .vaardigheden-details {
+    grid-template-columns: 1fr; /* Een kolom op kleiner */
+  }
+}
