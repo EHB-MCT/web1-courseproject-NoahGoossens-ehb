@@ -47,61 +47,57 @@ header .logo {
   color: #f0e68c;
 }
 
-
-
-
-
-
-
-
-
-/*mobilenavPart*/
-
-.mobileNav {
-  padding: 1.5rem 2rem;
-  background-color: #333;
-  color: #fff;
+/* Hamburger menu */
+nav {
+  position: relative;
 }
-.nav-mobile {
-  display: none;
-}
+
 .checkbtn {
-  font-size: 1.5rem;
+  display: block;
+  font-size: 2rem;
   color: white;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
 }
 
 .checkbtn i {
-    display: block;
-}
-.nav-mobile {
-  position: absolute;
-  top: 4.5rem;
-  left: 0;
-  background: #222831;
-  z-index: 1;
-  width: 200px;
-}
-.nav-mobile a {
-  color: #fff;
-  padding: 1rem 1.5rem;
   display: block;
 }
 
+/*mobilenavPart*/
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: #007bff;
+  z-index: 1;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-mobile a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.nav-mobile a:hover {
+  background: #0056b3;
+}
+
+/* Checkbox toggle */
 #check:checked ~ .nav-mobile {
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*Main part*/
 .main {
@@ -140,9 +136,6 @@ header .logo {
   color: #222;
 }
 
-
-
-
 /*over mij*/
 
 .aboutMe {
@@ -175,10 +168,6 @@ header .logo {
   margin-bottom: 20px;
 }
 
-
-
-
-
 /*footer*/
 footer {
   color: white;
@@ -198,9 +187,6 @@ footer a:hover {
   color: #f9d423;
 }
 
-
-
-
 /*telefoon*/
 @media (max-width: 768px) {
   header {
@@ -209,10 +195,14 @@ footer a:hover {
   }
 
   .navigatieBar ul {
-    flex-direction: column;
+    display: none; /* Verberg de desktop-navigatie op mobiele schermen */
   }
 
-  .navigatieBar ul li {
-    margin: 10px;
+  .checkbtn {
+    display: block;
+  }
+
+  .nav-mobile a {
+    font-size: 1.2em;
   }
 }
