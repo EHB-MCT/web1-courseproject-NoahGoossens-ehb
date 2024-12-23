@@ -46,6 +46,63 @@ header .logo {
 .navigatieBar ul li a:hover {
   color: #f0e68c;
 }
+
+
+
+
+
+
+
+
+
+/*mobilenavPart*/
+
+.mobileNav {
+  padding: 1.5rem 2rem;
+  background-color: #333;
+  color: #fff;
+}
+.nav-mobile {
+  display: none;
+}
+.checkbtn {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.checkbtn i {
+    display: block;
+}
+.nav-mobile {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  background: #222831;
+  z-index: 1;
+  width: 200px;
+}
+.nav-mobile a {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: block;
+}
+
+#check:checked ~ .nav-mobile {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*Main part*/
 .main {
   background: linear-gradient(
@@ -83,6 +140,9 @@ header .logo {
   color: #222;
 }
 
+
+
+
 /*over mij*/
 
 .aboutMe {
@@ -115,6 +175,10 @@ header .logo {
   margin-bottom: 20px;
 }
 
+
+
+
+
 /*footer*/
 footer {
   color: white;
@@ -128,4 +192,27 @@ footer a {
   color: #f0e68c;
   text-decoration: none;
   font-weight: 500;
+}
+
+footer a:hover {
+  color: #f9d423;
+}
+
+
+
+
+/*telefoon*/
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .navigatieBar ul {
+    flex-direction: column;
+  }
+
+  .navigatieBar ul li {
+    margin: 10px;
+  }
 }
