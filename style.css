@@ -95,39 +95,37 @@ header .logo {
 }
 /*over mij*/
 .aboutMe img {
-    height: 300px;
-    width: 250px;
-    /*ovaal*/
-    border-radius: 50%;
-    box-shadow: 0 4px 8 rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+  height: 300px;
+  width: 250px;
+  /*ovaal*/
+  border-radius: 50%;
+  box-shadow: 0 4px 8 rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 /*Info over mij*/
 .aboutMe h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .aboutMe p {
-    font-size: 20px;
-    color: #666;
-    margin-bottom: 20px;
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 /*footer*/
 footer {
-    color: white;
-    font-size: 15px;
-      text-align: center;
-    padding: 20px 10%;
-    background-color: #333;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px 10%;
+  background-color: #333;
 }
-
 
 footer a {
-    color: #f0e68c;
-    text-decoration:none;
-    font-weight: 500;
+  color: #f0e68c;
+  text-decoration: none;
+  font-weight: 500;
 }
-
