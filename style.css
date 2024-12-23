@@ -129,6 +129,14 @@ nav {
   font-size: 1em;
   font-weight: bold;
   border-radius: 25px;
+  text-decoration: none;
+}
+
+.ervar-button:hover {
+  background: #0056b3;
+  color: white;
+  transition: background 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 .cta-button:hover {
@@ -184,7 +192,8 @@ footer a {
 }
 
 footer a:hover {
-  color: #f9d423;
+  color: #0056b3;
+  transition: color 0.5s ease;
 }
 
 /*telefoon*/
@@ -204,5 +213,69 @@ footer a:hover {
 
   .nav-mobile a {
     font-size: 1.2em;
+  }
+}
+
+/* Hoofdsectie voor de foto's en tekst */
+.ervaring-fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Drie kolommen op grotere schermen */
+  gap: 30px;
+  padding: 50px 10%;
+}
+
+.ervaring-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: left;
+  flex-wrap: wrap; /* Zorgt ervoor dat de tekst netjes wordt omgebogen */
+}
+
+.ervaring-item img {
+  width: 400px; /* Afbeeldingen zijn nu 400px breed */
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ervaring-text {
+  max-width: 400px;
+}
+
+.ervaring-text h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ervaring-text p {
+  font-size: 17px;
+  color: #666;
+  line-height: 1.7; /* Verhoogt de regelafstand*/
+}
+
+/* Responsieve opmaak voor mobiel */
+@media (max-width: 768px) {
+  .ervaring-fotos {
+    grid-template-columns: 1fr; /* Maak de kolommen één voor één op mobiel */
+    padding: 20px;
+  }
+  .ervaring-item img {
+    width: 80%; /* afbeeldingen kleiner zijn op mobiel */
+    margin-right: 0;
+  }
+
+  .ervaring-text h3 {
+    font-size: 20px;
+  }
+
+  .ervaring-text p {
+    font-size: 14px;
+  }
+  .ervaring-item {
+    flex-direction: column; /*0 tekst onder de afbeelding op mobiel */
+    text-align: center;
   }
 }
